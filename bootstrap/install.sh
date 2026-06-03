@@ -58,4 +58,3 @@ install_file "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
 
 echo
 echo "Done. Start a fresh shell with:  exec zsh"
-echo "(Terminal theme: import $DOTFILES_DIR/AdventureTime.terminal manually.)"
