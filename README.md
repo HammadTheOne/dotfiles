@@ -47,10 +47,11 @@ The numbox dev stack has its own one-time setup — DB cluster (`initdb`,
 `.env` — documented in the numbox repo's [`docs/LOCAL_ENV_SETUP.md`](https://github.com/NumberAI/numbox/blob/master/docs/LOCAL_ENV_SETUP.md).
 
 Day to day, `numboxup` (aliased in `.zshrc`, backed by
-`numbox/scripts/herd-dev.sh`) drives herdr to spin up the whole stack in one
-shot: a workspace with named tabs for Flask, Celery (worker + beat), and
-Services (redis / ngrok / postgres), cleaning up strays from previous runs
-first. Start `herdr`, run `numboxup` in any pane.
+`scripts/herd-dev.sh`) drives herdr to spin up the whole stack in one shot: a
+workspace with named tabs for Flask, Celery (worker + beat), and Services
+(redis / ngrok / postgres), cleaning up strays from previous runs first. Start
+`herdr`, run `numboxup` in any pane. It targets the numbox checkout at
+`$NUMBOX_DIR` (default `~/Documents/numbox`).
 
 ## Alternates
 
