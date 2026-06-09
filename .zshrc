@@ -124,6 +124,7 @@ NUMBOX_FRONTEND_PATH="/Users/hammad/Documents/numbox-clients/packages/numbox-web
 
 # Numa AI Specific Aliases
 alias numboxclientrun="cd $NUMBOX_FRONTEND_PATH && npm start"
+alias numboxup="$HOME/Documents/numbox/scripts/herd-dev.sh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

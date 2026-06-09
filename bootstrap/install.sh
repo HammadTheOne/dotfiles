@@ -5,7 +5,8 @@
 #   2. custom plugins (zsh-autosuggestions, zsh-syntax-highlighting,
 #      zsh-history-substring-search) — these are NOT tracked in this repo
 #   3. powerlevel10k theme
-#   4. install the tracked dotfiles (.zshrc, .p10k.zsh), backing up any existing
+#   4. install the tracked configs (.zshrc, .p10k.zsh, ghostty, herdr),
+#      backing up any existing copies
 #
 # Idempotent and safe to re-run. Usage:  ./bootstrap/install.sh
 
@@ -53,8 +54,12 @@ install_file() {
 	echo "==> Installed $dest"
 }
 
-install_file "$DOTFILES_DIR/.zshrc"    "$HOME/.zshrc"
-install_file "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
+mkdir -p "$HOME/.config/ghostty" "$HOME/.config/herdr"
+
+install_file "$DOTFILES_DIR/.zshrc"            "$HOME/.zshrc"
+install_file "$DOTFILES_DIR/.p10k.zsh"         "$HOME/.p10k.zsh"
+install_file "$DOTFILES_DIR/ghostty/config"    "$HOME/.config/ghostty/config"
+install_file "$DOTFILES_DIR/herdr/config.toml" "$HOME/.config/herdr/config.toml"
 
 echo
 echo "Done. Start a fresh shell with:  exec zsh"

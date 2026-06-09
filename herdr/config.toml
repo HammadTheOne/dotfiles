@@ -1,0 +1,13 @@
+onboarding = false
+
+[ui.toast]
+delivery = "herdr"
+
+[theme]
+name = "terminal"
+
+[experimental]
+pane_history = true
+
+[ui]
+agent_panel_scope = "all"
